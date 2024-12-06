@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="WebRTC code samples">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta itemprop="description" content="Client-side WebRTC code samples">
+  <meta itemprop="name" content="WebRTC code samples">
+  <meta id="theme-color" name="theme-color" content="#ffffff">
+  <!-- <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css"> -->
+  <title>setSinkId samples</title>
+</head>
+
+<body>
+  <h1 id="container">
+    <div id="logMessage"></div>
+  </h1>
+
+  <button id="setDefaultSinkId">SetPreferredSinkId</button>
+  <button id="default1">Main</button>
+  <button id="communications">Communications</button>
+  <button id="custom">custom</button>
+  <input type="text" id="customInput" placeholder="Enter some text">
+  
+  <video id="gum" playsinline autoplay muted></video>
+  <video id="video1" width="400" controls autoplay loop>
+    <source src="sample-15s.webm" type="video/mp4"/>
+  </video>
+
+  <div> Same Origin
+    <iframe id="first_iframe" src="iframe.html" allow="microphone" width="100%" height="30%" ></iframe>
+  </div>
+  <div> Cross Origin
+    <iframe id="second_iframe" src="https://sunggook.github.io/test-site/" sandbox="allow-scripts allow-forms" width="100%" height="30%"></iframe>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
